@@ -239,7 +239,7 @@ img {vertical-align: middle;}
 
 /* Caption text */
 .text {
-  font-family: sans-serif;
+font-family: sans-serif;
   font-size: 27px;
   -webkit-font-smoothing:antialiased;
   line-height: 36px;
