@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" media="screen" href="style.css">
+<link rel="icon" type="image/jpg" href="image/INSERT.jpg">
+<title>Angus Plunkett</title>
+</head>
+<style>
+</style>
+<body>
+	<div id="wrapper">
+		<ul class="header">
+			<ul class="projects">
+			<li><a href="index.html"><span class="current">Angus Plunkett</span></a></li>
+			<li>Petra</li>			
+			</ul>
+		</ul>
+		</ul>
+
+	<div class="slideshow-container">
+
+	  	<div class="mySlides">
+	    <div class="numbertext"></div>
+	    <img src="image/Petra_01.jpg" style="height:600px;">
+	    <div class="numbertext">1 / 8</div>
+	    <div class="text"> Relaxed cheery vibes, food and natural wine help transport you to a place beyond time. Completed at T&T&T.</div>
+	  	</div>
+
+	  	<div class="mySlides">
+	    <div class="numbertext"></div>
+	    <img src="image/Petra_02.jpg" style="height:600px;">
+	    <div class="numbertext">2 / 8</div>
+	    <div class="text">
+		Relaxed cheery vibes, food and natural wine help transport you to a place beyond time. Completed at T&T&T.</div>
+	  	</div>
+
+	  	<div class="mySlides">
+	    <div class="numbertext"></div>
+	    <img src="image/Petra_03.jpg" style="height:600px;">
+	    <div class="numbertext">3 / 8</div>
+	    <div class="text">
+		Relaxed cheery vibes, food and natural wine help transport you to a place beyond time. Completed at T&T&T.</div>
+	  	</div>
+
+	  	<div class="mySlides">
+	    <div class="numbertext"></div>
+	    <img src="image/Petra_04.jpg" style="height:600px;">
+	    <div class="numbertext">4 / 8</div>
+	    <div class="text">
+		Relaxed cheery vibes, food and natural wine help transport you to a place beyond time. Completed at T&T&T.</div>
+	  	</div>
+
+	  	<div class="mySlides">
+	    <div class="numbertext"></div>
+	    <img src="image/Petra_05.jpg" style="height:600px;">
+	    <div class="numbertext">5 / 8</div>
+	    <div class="text">
+		Relaxed cheery vibes, food and natural wine help transport you to a place beyond time. Completed at T&T&T.</div>
+	  	</div>
+
+	  	<div class="mySlides">
+	    <div class="numbertext"></div>
+	    <img src="image/Petra_06.jpg" style="height:600px;">
+	    <div class="numbertext">6 / 8</div>
+	    <div class="text">
+		Relaxed cheery vibes, food and natural wine help transport you to a place beyond time. Completed at T&T&T.</div>
+	  	</div>
+
+	  	<div class="mySlides">
+	    <div class="numbertext"></div>
+	    <img src="image/Petra_07.jpg" style="height:600px;">
+	    <div class="numbertext">7 / 8</div>
+	    <div class="text">
+		Relaxed cheery vibes, food and natural wine help transport you to a place beyond time. Completed at T&T&T.</div>
+	  	</div>
+
+		<div class="mySlides">
+	    <div class="numbertext"></div>
+	    <img src="image/Petra_08.jpg" style="height:600px;">
+	    <div class="numbertext">8 / 8</div>
+	    <div class="text">
+		Relaxed cheery vibes, food and natural wine help transport you to a place beyond time. Completed at T&T&T.</div>
+	  	</div>
+
+
+
+
+      <a class="prev" onclick="plusSlides(-1)"></a>
+      <a class="next" onclick="plusSlides(1)"></a>
+	</div>
+
+
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+  </script>
+</body>

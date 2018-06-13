@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" media="screen" href="style.css">
+<link rel="icon" type="image/jpg" href="image/INSERT.jpg">
+<title>Angus Plunkett</title>
+</head>
+<style>
+</style>
+<body>
+	<div id="wrapper">
+		<ul class="header">
+		<li><a href="index.html"><span class="current">Angus Plunkett</span></a></li>	
+		<li>Ambient Chruch <span style="color:lightgrey"><i>(proposal)</i></span></a></li>		
+		</ul>
+		</ul>
+		</ul>
+
+	<div class="slideshow-container">
+
+	  	<div class="mySlides">
+	    <div class="numbertext"></div>
+	    <img src="image/ac_09.jpg" style="height:600px;">
+	    <div class="numbertext">1 / 10 — Logotype</div>
+	    <div class="text">
+		Discover your inner oasis and transcend to heaven on earth. Proposed identity for Ambient Church, a NYC based audio visual performance event series. Completed at T&T&T.</div>
+	  	</div>
+
+
+	  	<div class="mySlides">
+	    <div class="numbertext"></div>
+	    <img src="image/ac_01.jpg" style="height:600px;">
+	    <div class="numbertext">2 / 10 — Stationery</div>
+	    <div class="text">
+		Discover your inner oasis and transcend to heaven on earth. Proposed identity for Ambient Church, a NYC based audio visual performance event series. Completed at T&T&T.</div>
+	  	</div>
+
+	  	<div class="mySlides">
+	    <div class="numbertext"></div>
+	    <img src="image/ac_11.jpg" style="height:600px;">
+	    <div class="numbertext">3 / 10 — Seasonal Program</div>
+	    <div class="text">
+		Discover your inner oasis and transcend to heaven on earth. Proposed identity for Ambient Church, a NYC based audio visual performance event series. Completed at T&T&T.</div>
+	  	</div>
+
+	  	<div class="mySlides">
+	    <div class="numbertext"></div>
+	    <img src="image/ac_02.jpg" style="height:600px;">
+	    <div class="numbertext">4 / 10 — Wrist Band</div>
+	    <div class="text">
+		Discover your inner oasis and transcend to heaven on earth. Proposed identity for Ambient Church, a NYC based audio visual performance event series. Completed at T&T&T.</div>
+	  	</div>
+
+	  	<div class="mySlides">
+	    <div class="numbertext"></div>
+	    <img src="image/ac_08.jpg" style="height:600px;">
+	    <div class="numbertext">5 / 10 — Membership Card</div>
+	    <div class="text">
+		Discover your inner oasis and transcend to heaven on earth. Proposed identity for Ambient Church, a NYC based audio visual performance event series. Completed at T&T&T.</div>
+	  	</div> 	
+
+
+
+	  	<div class="mySlides">
+	    <div class="numbertext"></div>
+	    <img src="image/ac_03.jpg" style="height:600px;">
+	    <div class="numbertext">6 / 10 — Poster</div>
+	    <div class="text">
+		Discover your inner oasis and transcend to heaven on earth. Proposed identity for Ambient Church, a NYC based audio visual performance event series. Completed at T&T&T.</div>
+	  	</div>   
+
+	  	<div class="mySlides">
+	    <div class="numbertext"></div>
+	    <img src="image/ac_04.jpg" style="height:600px;">
+	    <div class="numbertext">7 / 10 — Poster</div>
+	    <div class="text">
+		Discover your inner oasis and transcend to heaven on earth. Proposed identity for Ambient Church, a NYC based audio visual performance event series. Completed at T&T&T.</div>
+	  	</div>
+
+	  	<div class="mySlides">
+	    <div class="numbertext"></div>
+	    <img src="image/ac_05.jpg" style="height:600px;">
+	    <div class="numbertext">8 / 10 — Poster </div>
+	    <div class="text">
+		Discover your inner oasis and transcend to heaven on earth. Proposed identity for Ambient Church, a NYC based audio visual performance event series. Completed at T&T&T.</div>
+	  	</div>
+
+	  	<div class="mySlides">
+	    <div class="numbertext"></div>
+	    <img src="image/ac_06.jpg" style="height:600px;">
+	    <div class="numbertext">9 / 10 — Poster</div>
+	    <div class="text">
+		Discover your inner oasis and transcend to heaven on earth. Proposed identity for Ambient Church, a NYC based audio visual performance event series. Completed at T&T&T.</div>
+	  	</div>
+
+	  	<div class="mySlides">
+	    <div class="numbertext"></div>
+	    <img src="image/ac_07.jpg" style="height:600px;">
+	    <div class="numbertext">10 / 10 — Bumper Sticker</div>
+	    <div class="text">
+		Discover your inner oasis and transcend to heaven on earth. Proposed identity for Ambient Church, a NYC based audio visual performance event series. Completed at T&T&T.</div>
+	  	</div>  	
+
+      <a class="prev" onclick="plusSlides(-1)"></a>
+      <a class="next" onclick="plusSlides(1)"></a>
+	</div>
+
+
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+  </script>
+</body>
