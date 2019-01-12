@@ -1,9 +1,15 @@
 
 /*WORK*/
+
+body{
+  margin: 15px;
+}
 p{
-  font-family: times, serif;
-
-
+    font-family: Times New Roman, Times, serif;
+    font-weight: normal;
+    font-size: 1.0rem;
+    line-height: 1.05;
+    letter-spacing: -0.01rem;
 }
 
 
