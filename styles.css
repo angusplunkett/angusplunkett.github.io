@@ -1,0 +1,715 @@
+
+					<div class="projectitem">
+						<img class="projectimage" src="images/DOD_02.jpg">
+					</div>@charset "UTF-8";
+/* CSS Document */
+*/
+/* CSS Reset */
+html, body, div, span, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+img, ins, kbd, q, s, samp,
+small, strike, strong, 
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    
+}
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-color: white;
+}
+ol, ul {
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+body{
+	    overflow-y: scroll;
+}
+ 
+
+/*header and menu*/
+
+#wrapper{
+	width: 100%;
+	margin: 0 auto;
+
+}
+
+#header{
+	text-align: left;
+	background-color:;
+	margin: 3px;
+	z-index: 150;
+
+}
+
+.bold{
+	font-weight: 800;
+
+}
+
+.sitetitle{
+	padding-top: 0;
+	font-family: verdana;
+	color: black;
+	font-size: 18px;
+		line-height: 24px;
+	text-align: left;
+ 	padding: 6px;
+	text-transform:none;
+	width: 100%;
+	font-weight: 800;
+}
+
+.close{
+	padding-top: 0;
+	font-family: verdana;
+	color: black;
+	font-size: 18px;
+	text-align: left;
+ 	padding: 9px;
+	text-transform:none;
+	text-align: right;
+	position: fixed;
+	right:0;
+	z-index: 10;
+}
+
+.light{
+	font-weight: 400;
+}
+
+li{
+	list-style: disc;
+}
+
+li.nodisc{
+	list-style: none;
+}
+
+li.nodisc:hover{
+	list-style: none;
+}
+
+li:hover{
+	list-style:circle;
+}
+
+li.nohover:hover{
+	list-style: disc;
+}
+
+.menu{
+	position: relative;
+	width: 100%;
+}
+
+.sitetitle:hover{
+  }  
+
+/*home*/
+
+#content{
+	display: inline-block;
+	flex-wrap: wrap;
+	margin: 3px;
+			padding-top: 30px;
+
+}
+
+.projects{
+	margin: 3px;
+
+}
+
+.listview{
+	padding: 0px;
+	padding-top: 6px;
+}
+
+.item {
+	height:auto;
+ 	float: left;
+ 	display: inline-block;
+    margin: 3px;
+    position: relative;
+}
+
+.projecttitle{
+	font-size: 18px;
+	font-family: verdana;
+	padding-top: 3px;
+}
+
+.image{
+	height:13em;
+}
+
+.imagelist{
+	height: 1.2em;
+	padding-right: 6px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.1s ease;
+  background-color: white;
+  border: black solid 3px;
+  box-sizing: border-box;
+}
+
+.item:hover .overlay {
+  opacity: 1;
+}
+
+.heading1 {
+  color: black;
+  font-size: 18px;
+  font-family: verdana;
+  position: absolute;
+  text-align: left;
+  padding: 9px;
+  font-weight: 800;
+}
+
+/*project page*/
+
+#projectcontainer{
+	display:flex;
+	flex-wrap:wrap;
+	margin: 0 auto;
+	width: 100%;
+}
+
+#projectinfo{
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	padding: 0px;
+	display:flex;
+	flex-wrap:wrap;
+}
+
+.projectimagery{
+	display:flex;
+	flex-wrap:wrap;
+	padding-bottom: 60px;
+}
+
+.heroimage{
+     background-size: cover;
+     background-image: url(images/image1.jpg);
+     width: 100vw;
+     height: 100vh;
+}
+
+
+
+
+.w-1of1 {
+	flex:0 0 100%;
+	text-align: center;
+	position: relative;
+}
+
+.ImageModuleLead{
+	width: 100%;
+}
+
+.ImageModule100{
+	width: 100%;
+	margin-bottom: 2.5rem;
+}
+
+.ImageModuleLandscape75{
+	width: 75%;
+	margin: 2.5rem 0 2.5rem;
+}
+
+.ImageModulePortrait60{
+	width: 60%;
+	margin: 2.5rem 0 2.5rem;
+}
+
+.w-1of2 {
+	flex:0 0 50%;}
+
+.ImageModule50{
+	width: 100%;
+	margin-top: 2.5rem;
+	margin-bottom: 2.5rem;
+}
+
+.left{
+	padding-right: 3px;
+}
+
+.right{
+	padding-left: 3px;
+}
+
+.w-2of3 {
+	flex:0 0 66.666%;
+	border-right: lightgrey solid 1px}
+
+.contact-1of3 {
+	flex:0 0 33.333%;
+	border-bottom: lightgrey solid 1px;
+}
+
+.about-w-1of2{
+	flex:0 0 10%;
+}
+.about-w-2of2{
+	flex:0 0 90%;
+}
+
+.w-1of3 {
+	flex:0 0 33.333%;
+}
+
+.ImageModule33{
+	width: 100%;
+	margin: 0rem 0 2.5rem;
+}
+
+.heromodule {
+}
+
+.body1{
+	padding-top: 0;
+	font-family: verdana;
+	line-height: 24px;
+	color: black;
+	font-size: 18px;
+	text-align: left;
+ 	padding-left: 9px;
+ 	width: 60%;
+
+}
+
+.projectinfotitle{
+	text-align: center;
+	font-family: verdana;
+	font-weight: bold;
+	font-size: 14px;
+	width: 100%;
+	color: black;
+	padding: 1em;
+	border-bottom: 1px solid lightgrey;
+}
+
+.body3{
+	font-size: 11px; 
+	line-height: 14px;
+    font-family: verdana;
+    text-align: left;
+    color: grey;
+    margin: 0;
+    width: 100%;
+    font-weight: 400;
+}
+
+.projectdivider{
+	padding-top: 0;
+	font-weight: 800;
+	font-family: verdana;
+	color: black;
+	font-size: 18px;
+	line-height: 24px;
+	text-align: left;
+ 	padding-left: 3px;
+	text-transform:none;
+	list-style-type: disc;
+	width:100%;
+}
+
+.titleone{
+	padding-top: 3px;
+	font-family: verdana;
+	color: black;
+	font-size: 18px;
+	line-height: 24px;
+	text-align: left;
+	text-transform:none;
+	list-style: disc;
+	width:100%;
+	font-weight: 800;
+}
+
+.projecttext{
+	width: 100%;
+	z-index: 100;
+}
+
+#relatedprojects{
+	width: 100%;
+	z-index: 100;
+padding-bottom: 60px;
+}
+
+/*slideshow*/
+* {box-sizing: border-box}
+.mySlides{display: none; text-align: center; vertical-align: middle;}
+img.center {
+    max-height: 100vh;
+    max-width: 100vw;
+text-align: center;
+position: absolute;
+top: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%)}
+
+
+.textcenter{
+	    max-height: 100vh;
+    max-width: 100vw;
+position: absolute;
+top: 50%;
+left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%)
+}
+
+
+/* Slideshow container */
+
+#slideshow{
+	width: 100%;
+    height: 100%;
+    max-height: 100vh;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    vertical-align: middle;
+    z-index: 50;
+}
+
+.slideshow-container {
+}
+
+/* Next & previous buttons */
+.prev, .next {
+	position: absolute;
+    top: 50%;
+    width: 50%;
+    cursor: pointer;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 100%;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  cursor: e-resize;
+}
+
+.prev{
+	cursor: w-resize;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+	text-decoration: none;
+}
+
+/* Caption text */
+
+/* Number text (1/3 etc) */
+.numbertext {
+	padding-top: 0;
+	font-family: verdana;
+	color: black;
+	font-size: 18px;
+	text-align: left;
+ 	padding: 9px;
+	text-transform:none;
+	width: 100%;
+	z-index: 10;
+	position: absolute; 
+bottom: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 1px;
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active, .dot:hover {  
+	
+}
+
+/* Fading animation */
+.fade {
+}
+
+@-webkit-keyframes fade {
+
+}
+@keyframes fade {
+}
+
+
+/*about*/
+.body2{
+	font-family: verdana;
+	font-weight:400;
+	color: black;
+	font-size: 14px;
+}
+
+
+/*type*/
+p{
+	padding:0px;
+	margin: 0;
+}
+
+/*links*/
+a:link, a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+	color:grey;
+	text-decoration: none;
+}
+
+a.current:link, a.current:visited {
+  color: black;
+}
+
+.active{
+	text-decoration: none;
+	color:black;
+}
+
+.unactive{
+	text-decoration: none;
+	color:grey;
+}
+
+body#malka{
+	background-image:;
+}
+
+
+/*footer*/
+
+#footer{
+   color: black;
+   font-weight: 800;
+   width:100%;
+   background:;
+   position: absolute;
+	font-family: verdana;
+	font-size: 11px;
+	padding: 9px;
+	margin-top: 30px;
+}
+
+#footerbottom0{
+	position: absolute;
+	bottom: 0;
+	   color: black;
+   font-weight: 800;
+   width:100%;
+   background:;
+   position: absolute;
+	font-family: verdana;
+	font-size: 11px;
+	padding: 9px;
+	margin-top: 30px;
+}
+
+
+.projectitem{
+	height:auto;
+ 	float: left;
+ 	display: inline-block;
+    position: relative;
+    padding: 3px;
+}
+
+.projectimage{
+	height:30em;
+}
+
+table {
+  width:100%;
+  font-size: 26px;
+  font-family: verdana;
+}
+table, th, td {
+  border-collapse: collapse;
+}
+th, td {
+  padding: 6px;
+  text-align: left;
+  font-weight: 400;
+}
+
+th.rightalign{
+	text-align: right;
+}
+
+th.bold{
+	font-weight: 700;
+	font-size: 26px;
+}
+
+th.smallimage{
+	height: 15px;
+}
+
+table tr:nth-child(odd) {
+  background-color:#f4f4f4;
+}
+
+tr:hover{
+}
+
+
+.content {
+	padding-top: 0;
+	font-family: verdana;
+	line-height: 24px;
+	color: black;
+	font-size: 18px;
+	text-align: left;
+ 	padding-left: 9px;
+ 	width: 100%;
+ 	display: none;
+ }
+
+
+.contentinfo{
+	display: none;
+	width: 100%;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+	margin-top: 3px;
+}
+
+.nopadding{
+	padding-left: 0;
+	text-indent: 0;
+}
+
+
+
+
+
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 736px) {
+  .projectimage{
+    width: 100%;
+    height: auto;
+  }
+  .titleone{
+  	font-size: 18px;
+  }
+  .item .image{
+  	width: 100%;
+    height: auto;
+  }
+  .sitetitle, .contentinfo, .titleone, .bold, .description, .heading1{
+  	font-size: 16px;
+  	line-height: 22px;
+  }
+}
+
+
+
+@media screen and (min-width: 1800px) {
+.image{
+	height:18em;
+}
+}
+
+
+
+
+.caption{
+	text-align: left;
+	color:black;
+	text-decoration: none;
+}
+
+.caption:hover{
+  text-decoration: none;
+        cursor: pointer;
+        color:grey;
+}
+
+.description{
+
+}
+
+.description:hover{
+
+}
+
+
+
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+
+----
+/* hero code */
+		<div class="heromodule">
+			<img class="heroimage">
+		</div>
+
+
+				<div id="header">
+		<div class="sitetitle">
+			<a href="index.html" class="current"><p>ANGUS PLUNKETT</p></a>
+		</div>
+		<div class="menu">
+			<div class="menuitem">
+			<a href="about.html"><p>About</p>
+			</div>
+		</div>
+
