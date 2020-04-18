@@ -650,7 +650,7 @@ tr:hover{
   	width: 100%;
     height: auto;
   }
-  .sitetitle, .contentinfo, .titleone, .bold, .description, .heading1{
+  .sitetitle, .contentinfo, .titleone, .bold, .description, .heading1, .projectdivider{
   	font-size: 15px;
   	line-height: 21px;
   }
