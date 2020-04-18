@@ -651,8 +651,8 @@ tr:hover{
     height: auto;
   }
   .sitetitle, .contentinfo, .titleone, .bold, .description, .heading1{
-  	font-size: 16px;
-  	line-height: 22px;
+  	font-size: 15px;
+  	line-height: 21px;
   }
 }
 
