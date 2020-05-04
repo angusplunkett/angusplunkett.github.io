@@ -96,7 +96,9 @@ element:hover, element:active {
 #content{
 	display: inline-block;
 	padding: 0.3em;
-
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
 }
 
 .projects{
@@ -209,7 +211,8 @@ body#malka{
     height: auto;
   }
   .heading1{
-  	line-height: 22px;
+  	font-size: 17px;
+  	line-height: 20px;
   }
 }
 
