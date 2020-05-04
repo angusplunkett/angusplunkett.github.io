@@ -48,10 +48,62 @@ body{
 
 /*header and menu*/
 
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: all 0.3s ease-out; 
+	-moz-transition: all 0.3s ease-out; 
+	-o-transition: all 0.3s ease-out; 
+	transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+		opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+		opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+*/
+
+#menu{
+	text-align: left;
+	background-color:;
+	margin: 3px;
+	z-index: 150;
+	padding-left: .8em;
+	margin: 0 auto;
+	background-color: white;
+	position: fixed;
+	width: 100%;
+	padding-top: 0.4em;
+	padding-bottom: 0.4em;
+}
+
+.menuitem{
+	font-size: 15px;
+	font-weight: 700;
+	font-family: arial;
+	line-height: 1.2;
+}
+
 #wrapper{
 	width: 100%;
 	margin: 0 auto;
 
+}
+
+.mono{
+	font-family: monospace;
+	font-size: 17px;
+	letter-spacing: -0.1px;
+	font-weight: 200;
 }
 
 #header{
@@ -62,10 +114,41 @@ body{
 
 }
 
+.emdash{
+	top:-100px;
+}
+
 .bold{
 	font-weight: 800;
 
 }
+
+.projecttext{
+
+	
+}
+
+.projecttitle{
+	font-size: 52px;
+	font-weight: 700;
+	font-family: arial;
+	line-height: 1.4;
+	letter-spacing: -1.1px;
+}
+
+
+.projectdescription{
+	font-size: 32px;
+	font-weight: 700;
+	font-family: arial;
+	line-height: 1.32;
+	letter-spacing: -0.2px;
+	margin-left: 0.4em;
+	margin-right: 0.4em;
+	margin-top: 0.2em;
+	-webkit-font-smoothing: antialiased;
+}
+
 
 .sitetitle{
 	padding-top: 0;
@@ -130,14 +213,11 @@ li.nohover:hover{
 
 #content{
 	display: inline-block;
-	flex-wrap: wrap;
-	margin: 3px;
-			padding-top: 30px;
+	padding: 0.3em;
 
 }
 
 .projects{
-	margin: 3px;
 
 }
 
@@ -150,7 +230,7 @@ li.nohover:hover{
 	height:auto;
  	float: left;
  	display: inline-block;
-    margin: 3px;
+    margin: 0.3em;
     position: relative;
 }
 
@@ -161,7 +241,7 @@ li.nohover:hover{
 }
 
 .image{
-	height:13em;
+	height:18em;
 }
 
 .imagelist{
@@ -176,10 +256,10 @@ li.nohover:hover{
   left: 0;
   right: 0;
   opacity: 0;
-  transition: 0.1s ease;
-  background-color: white;
-  border: black solid 3px;
-  box-sizing: border-box;
+  transition: 0.0s ease;
+  background-color: black;
+  color: white;
+  height: auto;
 }
 
 .item:hover .overlay {
@@ -187,14 +267,15 @@ li.nohover:hover{
 }
 
 .heading1 {
-  color: black;
-  font-size: 18px;
-  font-family: verdana;
-  position: absolute;
-  text-align: left;
+	font-size: 14px;
+	font-weight: 700;
+	font-family: arial;
+	line-height: 1.27;
+	letter-spacing: -0.1px;
   padding: 9px;
   font-weight: 800;
 }
+
 
 /*project page*/
 
@@ -503,11 +584,29 @@ p{
 a:link, a:visited {
   color: black;
   text-decoration: none;
+  border-bottom: 1px solid black;
 }
 
 a:hover{
-	color:grey;
+	color:black;
 	text-decoration: none;
+	cursor: alias;
+	border-bottom: none;
+}
+
+a.whitelink:link{
+	color: white;
+	 border-bottom: 1px solid white;
+}
+
+a.whitelink:visited{
+	color: white;
+	 border-bottom: 1px solid white;
+}
+
+a.whitelink:hover{
+	color: white;
+	 border-bottom: none;
 }
 
 a.current:link, a.current:visited {
@@ -537,8 +636,8 @@ body#malka{
    width:100%;
    background:;
    position: absolute;
-	font-family: verdana;
-	font-size: 11px;
+	font-family: arial;
+	font-size: 200px;
 	padding: 9px;
 	margin-top: 30px;
 }
@@ -646,13 +745,17 @@ tr:hover{
   .titleone{
   	font-size: 18px;
   }
+
+  .projectdescription{
+  	font-size: 17px;
+  }
   .item .image{
   	width: 100%;
     height: auto;
   }
-  .sitetitle, .contentinfo, .titleone, .bold, .description, .heading1, .projectdivider{
-  	font-size: 15px;
-  	line-height: 21px;
+  .sitetitle, .contentinfo, .titleone, .bold, .description, .heading1{
+  	font-size: 16px;
+  	line-height: 22px;
   }
 }
 
