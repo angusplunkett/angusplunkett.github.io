@@ -67,7 +67,6 @@ element:hover, element:active {
 	width: 100%;
 	margin: 0 auto;	
 	position: relative;
-
 }
 
 
@@ -95,7 +94,6 @@ element:hover, element:active {
 
 #content{
 	display: inline-block;
-	padding: 0.3em;
 	width: 100%;
 	margin: 0 auto;
 	position: relative;
@@ -104,7 +102,7 @@ element:hover, element:active {
 }
 
 .projects{
-
+	margin: 0.3em;
 }
 
 
