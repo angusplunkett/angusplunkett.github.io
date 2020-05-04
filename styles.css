@@ -112,11 +112,14 @@ element:hover, element:active {
  	display: inline-block;
     margin: 0.3em;
     position: relative;
+    height: auto;
+    width: auto;
 }
 
 
 .image{
 	height:18em;
+	width: auto;
 	 background: lightgrey;
 	 display: block;
 }
