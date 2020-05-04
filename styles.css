@@ -99,6 +99,8 @@ element:hover, element:active {
 	width: 100%;
 	margin: 0 auto;
 	position: relative;
+	flex-wrap: wrap;
+	display: flex;
 }
 
 .projects{
