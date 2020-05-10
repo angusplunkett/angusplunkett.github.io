@@ -49,9 +49,9 @@ body{
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
+  bottom: 25px;
   font-family: arial;
-  right: 30px;
+  right: 25px;
   z-index: 99;
   font-size: 14px;
   border: none;
