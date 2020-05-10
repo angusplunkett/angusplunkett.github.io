@@ -1,7 +1,4 @@
 
-					<div class="projectitem">
-						<img class="projectimage" src="images/DOD_02.jpg">
-					</div>@charset "UTF-8";
 /* CSS Document */
 */
 /* CSS Reset */
@@ -70,17 +67,18 @@ element:hover, element:active {
 }
 
 
-.projecttext{
+.leadtext{
 	width: 100%;
 	z-index: 100;	
 }
 
 
 .projectdescription{
-	font-size: 32px;
+	font-size: 24px;
 	font-weight: 700;
 	font-family: arial;
 	line-height: 1.2;
+	padding-bottom: 10px;
 	letter-spacing: -0.2px;
 	margin-left: 0.4em;
 	margin-right: 0.4em;
@@ -149,7 +147,8 @@ element:hover, element:active {
 	line-height: 1.27;
 	letter-spacing: -0.1px;
   padding: 9px;
-  font-weight: 800;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
 }
 
 
@@ -218,15 +217,14 @@ body#malka{
 @media screen and (max-width: 736px) {
 
   .projectdescription{
-  	font-size: 17px;
+  	font-size: 18px;
   }
   .item .image{
   	width: 100%;
     height: auto;
   }
   .heading1{
-  	font-size: 17px;
-  	line-height: 22px;
+  	font-size: 14px;
   }
 }
 
