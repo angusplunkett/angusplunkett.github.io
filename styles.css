@@ -46,6 +46,31 @@ body{
 /*header and menu*/
 
 
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  font-family: arial;
+  right: 30px;
+  z-index: 99;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+    height: 35px;
+  width: 35px;
+  text-align: center;
+  border-radius: 50%;
+  font-weight:800;
+}
+
+#myBtn:hover {
+  background-color: black;
+   color: white;
+}
+
 
 element:hover, element:active {
 -webkit-tap-highlight-color: rgba(0,0,0,0);
